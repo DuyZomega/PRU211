@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 389.33, y: 210}
+  m_AnchoredPosition: {x: 241, y: 137}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81664714
@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441214125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26008466, y: -0.3588107, z: 0.056152463}
+  m_LocalPosition: {x: -0.04, y: 0.19, z: 0.056152463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -321,7 +321,7 @@ MonoBehaviour:
   - money
   - monkey
   prefab: {fileID: 4603127224060754209, guid: 6a22ff647a1f79a42ba6081d50cc3fde, type: 3}
-  spawnInterval: 1
+  spawnInterval: 3
 --- !u!114 &441214128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,8 +530,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642002923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -3.23, z: 0}
-  m_LocalScale: {x: 1.3383, y: 1.4534, z: 1}
+  m_LocalPosition: {x: -0.45, y: -2.91, z: 0}
+  m_LocalScale: {x: 1.960495, y: 2.0649812, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -572,7 +572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -389.33, y: -139}
+  m_AnchoredPosition: {x: -394.7, y: -63.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &914655204
@@ -658,7 +658,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -778.01794, w: -88.53955}
+  m_margin: {x: 150.39404, y: 0, z: -632.32355, w: -88.53955}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -739,7 +739,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1316592754
 Transform:
@@ -749,8 +749,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316592752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1178, y: -0.0314, z: 3.4}
-  m_LocalScale: {x: 1.0239878, y: 1.034897, z: 1}
+  m_LocalPosition: {x: 0.0062, y: 0.0177, z: 3.4}
+  m_LocalScale: {x: 1.0144522, y: 0.960235, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
