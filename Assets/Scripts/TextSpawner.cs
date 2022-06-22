@@ -6,6 +6,21 @@ using Random = UnityEngine.Random;
 
 public class TextSpawner : MonoBehaviour
 {
+    public static bool GameIsPause = false;
+
+    [SerializeField]
+    private GameObject
+
+            pauseMenuUI,
+            optionMenu;
+
+    [SerializeField]
+
+
+
+
+    private GameObject mainMenu;
+
     public string[] pool =
     {
         "apple",
@@ -49,6 +64,19 @@ public class TextSpawner : MonoBehaviour
             Debug.Log("Spawning square...");
             Spawn();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            if (GameIsPause)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
     }
 
     private GameObject Spawn()
@@ -69,5 +97,39 @@ public class TextSpawner : MonoBehaviour
         gameObject.GetComponent<Controller>().Register(textMesh.text, go);
         
         return go;
+    }
+
+    public void Resume()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPause = false;
+
+    }
+
+    void Pause()
+    {
+
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPause = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void Options()
+    {
+        if (GameIsPause)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0f;
+            GameIsPause = true;
+
+        }
+        else
+        {
+            Resume();
+        }
     }
 }
